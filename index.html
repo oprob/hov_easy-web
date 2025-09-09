@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hack-o-Verse Blog</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+  <!--
+    TODO: Remove before production
+    Flag 1 (View Source): HOV{view_source_secret}
+  -->
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="/">Hack-o-Verse <span>Blog</span></a>
+      <form id="searchForm" class="search">
+        <input id="q" name="q" type="text" placeholder="Search posts…" aria-label="Search posts">
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="container content">
+    <section class="hero">
+      <h1>Welcome to the Hack-o-Verse Blog</h1>
+      <p class="muted">Security notes, event updates, and write-ups.</p>
+      <p class="hint">Hint: This site might be running in <em>debug</em> during Engineering Day.</p>
+    </section>
+
+    <section id="searchResults" class="card" hidden>
+      <h2>Search Results</h2>
+      <div id="results"></div>
+      <div id="reflect"></div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Kickoff: Engineering Day 2025</h2>
+        <p>We’re excited to host Hack-o-Verse 2025. Stay tuned for challenges, rules, and prizes.</p>
+        <a class="link" href="#">Read more</a>
+      </article>
+
+      <article class="card">
+        <h2>Why Basics Matter</h2>
+        <p>Strong fundamentals outperform complex tools. Learn to observe, enumerate, and validate.</p>
+        <a class="link" href="#">Read more</a>
+      </article>
+    </section>
+
+    <section class="card note">
+      <h3>Comments</h3>
+      <p>Comments are closed for now. Check back after the event.</p>
+      <p class="muted small">Psst: Sometimes developers leave debug toggles behind…</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© 2025 Hack-o-Verse • Mini Blog</small>
+    </div>
+  </footer>
+</body>
+</html>
